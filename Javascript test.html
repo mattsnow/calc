@@ -1,0 +1,65 @@
+<!-- your html file: -->
+<style>
+  .container {
+    font-size: 40px;
+    min-height: 500px;
+    width: 100%;
+    background: rgb(206, 213, 245);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+      "left_top centre_top right_top"
+      "left centre right"
+  }
+
+  .calc {
+    grid-area: centre;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+  }
+
+  .button {
+    font-size: 50%;
+    padding: 15px;
+  }
+
+  .display {
+    grid-area: centre_top;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <div class="display">bla</div>
+
+
+    <div class="calc">
+
+      <button class="button" id="0">0</button>
+      <button class="button">1</button>
+      <button class="button">2</button>
+      <button class="button">3</button>
+      <button class="button">4</button>
+      <button class="button">5</button>
+      <button class="button">6</button>
+      <button class="button">7</button>
+      <button class="button">8</button>
+      <button class="button">9</button>
+      <button class="button">CLR</button>
+      <button class="button">/</button>
+      <button class="button">*</button>
+      <button class="button">+</button>
+      <button class="button">-</button>
+      <button class="button">=</button>
+
+    </div>
+  </div>
+</body>
+
+<script src="script.js"></script>
